@@ -4,9 +4,7 @@ const port=4000
 let cardDeck=require('./Deck')
 let deck=new cardDeck();
 
-//create a server object:
 const server=http.createServer((req, res) =>{
-  console.log(req.url)
   switch(req.url)
   {
     case '/Draw':
@@ -46,8 +44,6 @@ const server=http.createServer((req, res) =>{
   }
   res.end(); //end the response
 })
-
-
 
 server.listen(port,function(error)
 {

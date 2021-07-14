@@ -1,13 +1,6 @@
+const Card = require("./Card.js");
 const types=["clubs","diamonds","hearts","spades"];
 const values=['ace',2,3,4,5,6,7,8,9,10,'jack','queen','king'];
-
-class Card{
-    constructor(value,type){
-        this.value=value
-        this.type=type
-    }
-}
-
 
 class Deck{
     constructor(){
@@ -100,4 +93,4 @@ class Deck{
     }
 }
 
-module.exports=Deck
+module.exports=Deck;
